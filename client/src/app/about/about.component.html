@@ -1,0 +1,14 @@
+<div align="center">
+<font size='5' color='blue'><p>{{nameshow}}​</p></font>
+<font size='5' color='blue'><p>{{usershow}}​</p></font>
+<img src="{{imageUrl}}" width="300" height="250">
+</div>
+<ul>
+    <li *ngFor="let person of publication; "> 
+        <p></p>
+        <a href="{{person.url}}"><font size='5' color='blue'>{{person.name}}​</font><p></p></a>
+        <a href="{{person.url}}"><img src="{{person.imageUrl}}" width="100" height="100"></a>
+        <p><b>Description:</b></p><font size='5' color='blue'>{{person.description}}​</font><p></p>
+        <p></p>
+    </li>
+</ul>
